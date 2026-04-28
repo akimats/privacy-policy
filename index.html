@@ -52,6 +52,26 @@
             font-size: 0.95em;
         }
 
+        .lang-switch {
+            text-align: right;
+            margin-bottom: 16px;
+            font-size: 0.9em;
+        }
+
+        .lang-switch a {
+            display: inline-block;
+            padding: 4px 12px;
+            border: 1px solid var(--accent);
+            border-radius: 4px;
+            color: var(--accent);
+        }
+
+        .lang-switch a:hover {
+            background: var(--accent);
+            color: #ffffff;
+            text-decoration: none;
+        }
+
         .lang-separator {
             text-align: center;
             margin: 48px 0 32px;
@@ -193,6 +213,9 @@
 </head>
 <body>
     <div class="container">
+        <div class="lang-switch">
+            <a href="index-en.html" hreflang="en" lang="en">English</a>
+        </div>
         <header>
             <h1>プライバシーポリシー</h1>
             <p>AkiAppsDev</p>
