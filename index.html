@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Privacy Policy - AkiAppsDev</title>
+    <title>プライバシーポリシー - AkiAppsDev</title>
     <style>
         :root {
             --primary: #2c3e50;
@@ -125,6 +125,35 @@
             margin-bottom: 0;
         }
 
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 12px 0;
+            font-size: 0.92em;
+        }
+
+        th, td {
+            border: 1px solid var(--border);
+            padding: 8px 10px;
+            text-align: left;
+            vertical-align: top;
+        }
+
+        th {
+            background: var(--bg);
+            color: var(--primary);
+            font-weight: 600;
+        }
+
+        .note {
+            background: var(--bg);
+            border-left: 3px solid var(--accent);
+            padding: 10px 14px;
+            margin: 12px 0;
+            font-size: 0.92em;
+            color: var(--text-light);
+        }
+
         footer {
             text-align: center;
             margin-top: 40px;
@@ -151,21 +180,33 @@
                 font-size: 0.85em;
                 padding: 5px 10px;
             }
+
+            table {
+                font-size: 0.85em;
+            }
+
+            th, td {
+                padding: 6px 8px;
+            }
         }
     </style>
 </head>
 <body>
     <div class="container">
         <header>
-            <h1>プライバシーポリシー / Privacy Policy</h1>
+            <h1>プライバシーポリシー</h1>
             <p>AkiAppsDev</p>
+            <p>最終更新日: 2026年4月28日</p>
         </header>
 
-        <!-- ==================== 日本語 ==================== -->
-
+        <!-- 1. はじめに -->
         <section>
-            <h2>対象アプリケーション</h2>
-            <p>本プライバシーポリシーは、AkiAppsDev が提供する以下のAndroidアプリケーション（以下「本アプリ」）に適用されます。</p>
+            <h2>1. はじめに</h2>
+            <p>AkiAppsDev（以下「当方」といいます）は、当方が提供する Android アプリケーション（以下「本アプリ」と総称します）における利用者の個人情報・利用者情報の取扱いについて、本プライバシーポリシー（以下「本ポリシー」といいます）を定めます。本ポリシーは、日本の個人情報の保護に関する法律（以下「個人情報保護法」）、EU 一般データ保護規則（GDPR）、および Google Play デベロッパー ポリシーに準拠しています。</p>
+            <p><strong>事業者:</strong> AkiAppsDev<br>
+            <strong>所在地:</strong> 〒812-0011 福岡県福岡市博多区博多駅前1丁目23番2号 ParkFront博多駅前1丁目5F-B<br>
+            <strong>連絡先:</strong> <a href="mailto:contact@akiappsdev.com">contact@akiappsdev.com</a></p>
+            <p>本ポリシーは、当方が提供する以下の Android アプリケーションに適用されます。</p>
             <ul class="app-list">
                 <li>どうぶつ性格診断（AnimalShindan）</li>
                 <li>スマート電卓（SmartCalc）</li>
@@ -180,175 +221,399 @@
                 <li>うちのこログ（PetLog）</li>
                 <li>おてつだいBank（OtetsudaiBank）</li>
                 <li>おくだけ勇者（OkudakeHero）</li>
-                <li>GalaxyBowling</li>
-                <li>息トレ（BreathCanvas）</li>
-                <li>傾きで奏でる（TiltTone）</li>
-                <li>BeatWalk</li>
-                <li>1秒日記（OneSecond）</li>
-                <li>パラレルワールド日記（IfOnly）</li>
-                <li>無限数独（InfiniteSudoku）</li>
-                <li>無限お絵かきロジック（InfiniteNonogram）</li>
-                <li>無限パイプ（InfiniteConnect）</li>
                 <li>食材管理（FoodKeeper）</li>
+                <li>あいうえおかきかた（Kakikata）</li>
+                <li>ゴミ出しアラート（TrashAlert）</li>
+                <li>のんだっけ?（Nondakke）</li>
+                <li>転生診断（TenseiShindan）</li>
+                <li>はじめてごはん（HajimeteGohan）</li>
                 <li>ADHDセルフチェック（ADHDShindan）</li>
             </ul>
         </section>
 
+        <!-- 2. 取得する情報 -->
         <section>
-            <h2>個人情報の収集について</h2>
-            <p>本アプリは、お客様の個人情報（氏名、メールアドレス、住所、電話番号など）を収集・送信することはありません。</p>
-        </section>
+            <h2>2. 取得する情報</h2>
+            <p>本アプリが取得する情報は、アプリごとに異なります。利用者が直接入力した情報は、原則として利用者の端末内にのみ保存され、外部に送信されることはありません。広告配信およびクラッシュレポートのために、Google が提供する SDK 経由で一部の利用者情報が外部に送信される場合があります（詳細は第 4 項を参照）。</p>
 
-        <section>
-            <h2>データの保存について</h2>
-            <p>一部のアプリ（サブスクみえる化、うちのこログ、おてつだいBank、エゴグラム診断、筋トレログ、健康ログ、おくだけ勇者、1秒日記、パラレルワールド日記、食材管理、ADHDセルフチェック）では、お客様が入力したデータをお使いの端末内にのみ保存します。これらのデータが外部サーバーに送信されることはありません。</p>
-        </section>
+            <h3>2-1. アプリ別の取得情報</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>アプリ名</th>
+                        <th>取得する情報</th>
+                        <th>保存場所</th>
+                        <th>外部送信</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>どうぶつ性格診断</td>
+                        <td>診断回答</td>
+                        <td>端末内（一時メモリ）</td>
+                        <td>広告 SDK のみ</td>
+                    </tr>
+                    <tr>
+                        <td>スマート電卓</td>
+                        <td>計算履歴</td>
+                        <td>端末内</td>
+                        <td>広告 SDK のみ</td>
+                    </tr>
+                    <tr>
+                        <td>エゴグラム診断</td>
+                        <td>性格診断履歴（要配慮個人情報）</td>
+                        <td>端末内（Room DB）</td>
+                        <td>外部送信なし（広告 SDK 除く）</td>
+                    </tr>
+                    <tr>
+                        <td>おやすみサウンド</td>
+                        <td>サウンド設定・タイマー設定</td>
+                        <td>端末内</td>
+                        <td>広告 SDK のみ</td>
+                    </tr>
+                    <tr>
+                        <td>筋トレログ</td>
+                        <td>トレーニング記録</td>
+                        <td>端末内（Room DB）</td>
+                        <td>広告 SDK のみ</td>
+                    </tr>
+                    <tr>
+                        <td>健康ログ</td>
+                        <td>体重・血圧・脈拍・体脂肪率（要配慮個人情報）</td>
+                        <td>端末内（Room DB）</td>
+                        <td>外部送信なし（広告 SDK 除く）</td>
+                    </tr>
+                    <tr>
+                        <td>フリック暗算</td>
+                        <td>スコア・プレイ履歴</td>
+                        <td>端末内</td>
+                        <td>広告 SDK のみ</td>
+                    </tr>
+                    <tr>
+                        <td>よみあげ電卓</td>
+                        <td>計算履歴</td>
+                        <td>端末内</td>
+                        <td>広告 SDK のみ</td>
+                    </tr>
+                    <tr>
+                        <td>まなび電卓</td>
+                        <td>音声入力（リアルタイム認識）</td>
+                        <td>端末内（永続化なし）</td>
+                        <td>Google SpeechRecognizer / 広告 SDK</td>
+                    </tr>
+                    <tr>
+                        <td>サブスクみえる化</td>
+                        <td>サブスクリプション情報（サービス名・金額）</td>
+                        <td>端末内</td>
+                        <td>広告 SDK のみ</td>
+                    </tr>
+                    <tr>
+                        <td>うちのこログ</td>
+                        <td>ペット情報・写真・体重等</td>
+                        <td>端末内 / Firebase Authentication（UID）/ Cloud Firestore（家族グループ共有データ）</td>
+                        <td>Firebase（Google LLC, 米国）</td>
+                    </tr>
+                    <tr>
+                        <td>おてつだいBank</td>
+                        <td>お手伝い記録・残高</td>
+                        <td>端末内</td>
+                        <td>広告 SDK のみ</td>
+                    </tr>
+                    <tr>
+                        <td>おくだけ勇者</td>
+                        <td>ゲーム進行データ</td>
+                        <td>端末内</td>
+                        <td>広告 SDK のみ</td>
+                    </tr>
+                    <tr>
+                        <td>食材管理</td>
+                        <td>食材情報・賞味期限・バーコード画像（一時処理）</td>
+                        <td>端末内</td>
+                        <td>広告 SDK のみ</td>
+                    </tr>
+                    <tr>
+                        <td>あいうえおかきかた</td>
+                        <td>一切収集しません（完全オフライン、INTERNET 権限なし）</td>
+                        <td>該当なし</td>
+                        <td>外部送信なし</td>
+                    </tr>
+                    <tr>
+                        <td>ゴミ出しアラート</td>
+                        <td>ゴミ収集スケジュール・通知設定</td>
+                        <td>端末内</td>
+                        <td>広告 SDK のみ</td>
+                    </tr>
+                    <tr>
+                        <td>のんだっけ?</td>
+                        <td>服薬情報（薬名・服用時刻・ログ）（要配慮個人情報）</td>
+                        <td>端末内（DataStore）</td>
+                        <td>外部送信なし（広告 SDK 除く）</td>
+                    </tr>
+                    <tr>
+                        <td>転生診断</td>
+                        <td>診断回答（永続化なし）</td>
+                        <td>端末内（一時メモリ）</td>
+                        <td>外部 AI サービス（ChatGPT / Gemini）への遷移は利用者が手動で行います。診断回答は当方サーバーには送信されません。</td>
+                    </tr>
+                    <tr>
+                        <td>はじめてごはん</td>
+                        <td>離乳食記録・食材アレルギー情報</td>
+                        <td>端末内</td>
+                        <td>広告 SDK のみ（保護者向け、児童は対象外）</td>
+                    </tr>
+                    <tr>
+                        <td>ADHDセルフチェック</td>
+                        <td>ASRS / WURS / AQ-10 心理検査スコア（要配慮個人情報）、Google Play 課金状態</td>
+                        <td>端末内（SharedPreferences）</td>
+                        <td>外部送信なし（広告 SDK・Google Play Billing 除く）</td>
+                    </tr>
+                </tbody>
+            </table>
 
-        <section>
-            <h2>広告について</h2>
-            <p>本アプリでは、Google AdMob を利用して広告を表示しています。AdMob は、広告の最適化のために匿名のデータ（広告識別子、端末情報など）を収集する場合があります。</p>
-            <p>Google によるデータの取り扱いについては、以下のページをご参照ください。</p>
+            <h3>2-2. 共通して取得する情報（広告 SDK 経由）</h3>
+            <p>本アプリのうち広告を表示するものでは、Google AdMob SDK が以下の情報を取得・送信します。</p>
             <ul>
-                <li><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google プライバシーポリシー</a></li>
-                <li><a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener">Google の広告に関するポリシー</a></li>
+                <li>広告 ID（Android Advertising ID / AAID）</li>
+                <li>IP アドレス</li>
+                <li>デバイス情報（機種・OS バージョン・言語・タイムゾーン）</li>
+                <li>おおよその位置情報（IP アドレスに基づく国レベル）</li>
+                <li>アプリの操作・広告閲覧ログ</li>
             </ul>
         </section>
 
+        <!-- 3. 利用目的 -->
         <section>
-            <h2>クラッシュレポートについて</h2>
-            <p>本アプリでは、Firebase Crashlytics を使用してクラッシュレポートとパフォーマンスデータを収集しています。これにより、アプリの品質向上と問題の迅速な解決に役立てています。収集されるデータには、クラッシュ時のスタックトレース、端末情報、アプリの状態が含まれますが、個人を特定する情報は含まれません。</p>
-            <p>Firebase のデータの取り扱いについては、<a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Firebase プライバシーポリシー</a>をご参照ください。</p>
-        </section>
-
-        <section>
-            <h2>カメラ・マイク・センサーについて</h2>
+            <h2>3. 利用目的</h2>
+            <p>当方は、個人情報保護法第 17 条に基づき、取得した情報を以下の目的の範囲内でのみ利用します。</p>
             <ul>
-                <li>息トレ（BreathCanvas）はマイクを使用して呼吸音を検出します。音声データは端末内でのみ処理され、外部に送信されることはありません。</li>
-                <li>1秒日記（OneSecond）はカメラを使用して動画を撮影します。撮影した動画は端末内にのみ保存されます。</li>
-                <li>食材管理（FoodKeeper）はカメラを使用してバーコードを読み取ります。画像データは端末内でのみ処理されます。</li>
-                <li>傾きで奏でる（TiltTone）、BeatWalk はセンサー（ジャイロスコープ、加速度センサー）を使用します。センサーデータは端末内でのみ処理されます。</li>
+                <li>本アプリの機能提供（利用者が入力したデータの記録・表示・集計）</li>
+                <li>広告の配信および最適化（Google AdMob 経由）</li>
+                <li>アプリの不具合解析・品質改善（Firebase Crashlytics 経由）</li>
+                <li>有料機能の提供（ADHDセルフチェック）</li>
+                <li>お問い合わせへの対応</li>
+                <li>本ポリシーの変更通知等の連絡</li>
             </ul>
+            <p>取得した情報を上記目的以外に利用する場合は、事前に利用者の同意を取得します。</p>
         </section>
 
+        <!-- 4. 第三者提供 (送信先) -->
         <section>
-            <h2>音声認識について</h2>
-            <p>まなび電卓（ManabiCalc）では、Android端末に搭載された音声認識機能を使用しています。音声データはGoogleの音声認識サービスによって処理されます。当開発者が音声データを収集・保存することはありません。</p>
-            <p>Googleの音声認識サービスにおけるデータの取り扱いについては、<a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Googleのプライバシーポリシー</a>をご参照ください。</p>
-        </section>
+            <h2>4. 第三者提供（送信先 SDK 一覧）</h2>
+            <p>本アプリでは、以下の第三者サービス（SDK）を利用しており、各サービスへ利用者情報が送信されます。いずれの場合も、当方が利用者の氏名・住所・電話番号・メールアドレス等を直接送信することはありません。</p>
 
-        <section>
-            <h2>お子様のプライバシーについて</h2>
-            <p>本アプリの一部は、お子様を対象として設計されています。当開発者は、お子様から意図的に個人情報を収集することはありません。万が一、お子様が個人情報を提供されたことが判明した場合は、速やかに対応いたしますので、下記の連絡先までご連絡ください。</p>
-        </section>
-
-        <section>
-            <h2>プライバシーポリシーの変更</h2>
-            <p>本プライバシーポリシーは、必要に応じて更新される場合があります。変更があった場合は、本ページにて通知いたします。</p>
-        </section>
-
-        <section>
-            <h2>お問い合わせ</h2>
-            <p>本プライバシーポリシーに関するご質問やお問い合わせは、以下までご連絡ください。</p>
-            <p><strong>開発者:</strong> AkiAppsDev<br>
-            <strong>メール:</strong> <a href="mailto:contact@akiappsdev.com">contact@akiappsdev.com</a></p>
-        </section>
-
-        <!-- ==================== English ==================== -->
-
-        <div class="lang-separator">English</div>
-
-        <section>
-            <h2>Applicable Applications</h2>
-            <p>This Privacy Policy applies to the following Android applications ("Apps") developed by AkiAppsDev.</p>
-            <ul class="app-list">
-                <li>AnimalShindan</li>
-                <li>SmartCalc</li>
-                <li>EgoGram</li>
-                <li>SleepSound</li>
-                <li>MuscleLog</li>
-                <li>HealthLog</li>
-                <li>FlickMath</li>
-                <li>VoiceCalc</li>
-                <li>ManabiCalc</li>
-                <li>SubsTracker</li>
-                <li>PetLog</li>
-                <li>OtetsudaiBank</li>
-                <li>OkudakeHero</li>
-                <li>GalaxyBowling</li>
-                <li>BreathCanvas</li>
-                <li>TiltTone</li>
-                <li>BeatWalk</li>
-                <li>OneSecond</li>
-                <li>IfOnly</li>
-                <li>InfiniteSudoku</li>
-                <li>InfiniteNonogram</li>
-                <li>InfiniteConnect</li>
-                <li>FoodKeeper</li>
-                <li>ADHDShindan</li>
-            </ul>
-        </section>
-
-        <section>
-            <h2>Personal Data Collection</h2>
-            <p>Our Apps do not collect or transmit any personal information such as names, email addresses, physical addresses, or phone numbers.</p>
-        </section>
-
-        <section>
-            <h2>Data Storage</h2>
-            <p>Some Apps (SubsTracker, PetLog, OtetsudaiBank, EgoGram, MuscleLog, HealthLog, OkudakeHero, OneSecond, IfOnly, FoodKeeper, ADHDShindan) store user-entered data locally on the device only. This data is never transmitted to any external servers.</p>
-        </section>
-
-        <section>
-            <h2>Advertising</h2>
-            <p>Our Apps use Google AdMob to display advertisements. AdMob may collect anonymous data (such as advertising identifiers and device information) for ad personalization purposes.</p>
-            <p>For details on how Google handles data, please refer to:</p>
+            <h3>4-1. Google AdMob</h3>
             <ul>
-                <li><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a></li>
-                <li><a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener">Google Advertising Policies</a></li>
+                <li><strong>提供事業者:</strong> Google LLC</li>
+                <li><strong>送信先国:</strong> アメリカ合衆国</li>
+                <li><strong>送信される情報:</strong> 広告 ID（AAID）、IP アドレス、デバイス情報（機種・OS バージョン）、おおよその位置情報（国レベル）、アプリ操作・広告閲覧ログ</li>
+                <li><strong>送信目的:</strong> 広告配信、不正クリック検知、効果測定</li>
+                <li><strong>プライバシーポリシー:</strong> <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">https://policies.google.com/privacy</a></li>
+                <li><strong>広告ポリシー:</strong> <a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener">https://policies.google.com/technologies/ads</a></li>
             </ul>
-        </section>
 
-        <section>
-            <h2>Crash Reporting</h2>
-            <p>Our Apps use Firebase Crashlytics to collect crash reports and performance data. This helps us improve app quality and resolve issues quickly. The data collected includes stack traces at the time of a crash, device information, and app state, but does not include any personally identifiable information.</p>
-            <p>For details on how Firebase handles data, please refer to <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Firebase Privacy Policy</a>.</p>
-        </section>
-
-        <section>
-            <h2>Camera, Microphone &amp; Sensors</h2>
+            <h3>4-2. Firebase Crashlytics</h3>
             <ul>
-                <li>BreathCanvas uses the microphone to detect breathing sounds. Audio data is processed on the device only and is never transmitted externally.</li>
-                <li>OneSecond uses the camera to record videos. Recorded videos are stored on the device only.</li>
-                <li>FoodKeeper uses the camera to scan barcodes. Image data is processed on the device only.</li>
-                <li>TiltTone and BeatWalk use sensors (gyroscope, accelerometer). Sensor data is processed on the device only.</li>
+                <li><strong>提供事業者:</strong> Google LLC</li>
+                <li><strong>送信先国:</strong> アメリカ合衆国</li>
+                <li><strong>送信される情報:</strong> クラッシュ時のスタックトレース、デバイス情報、アプリ識別子、Firebase インストール ID、アプリ状態</li>
+                <li><strong>送信目的:</strong> アプリの不具合解析・品質改善</li>
+                <li><strong>プライバシーポリシー:</strong> <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">https://firebase.google.com/support/privacy</a></li>
+            </ul>
+
+            <h3>4-3. Google SpeechRecognizer（まなび電卓のみ）</h3>
+            <ul>
+                <li><strong>提供事業者:</strong> Google LLC</li>
+                <li><strong>送信先国:</strong> アメリカ合衆国</li>
+                <li><strong>送信される情報:</strong> 音声入力データ（数式読み上げ）</li>
+                <li><strong>送信目的:</strong> Android 標準の音声認識機能による文字列変換</li>
+                <li><strong>備考:</strong> 当方は音声データを取得・保存しません。Android OS が SpeechRecognizer API 経由で Google に送信します。</li>
+            </ul>
+
+            <h3>4-4. Firebase Authentication / Cloud Firestore（うちのこログのみ）</h3>
+            <ul>
+                <li><strong>提供事業者:</strong> Google LLC</li>
+                <li><strong>送信先国:</strong> アメリカ合衆国</li>
+                <li><strong>送信される情報:</strong> Google アカウント UID、家族グループに共有するペット情報・写真</li>
+                <li><strong>送信目的:</strong> 家族間でのデータ共有機能の提供</li>
+            </ul>
+
+            <h3>4-5. Google Play Billing（ADHDセルフチェックのみ）</h3>
+            <ul>
+                <li><strong>提供事業者:</strong> Google LLC</li>
+                <li><strong>送信される情報:</strong> 課金トークン、購入状態（premium_unlock）</li>
+                <li><strong>送信目的:</strong> 有料機能（¥500 一括課金）の提供と購入状態の検証</li>
             </ul>
         </section>
 
+        <!-- 5. 広告について -->
         <section>
-            <h2>Speech Recognition</h2>
-            <p>ManabiCalc uses the built-in speech recognition feature of Android devices. Speech data is processed by Google's speech recognition service. The developer does not collect or store any speech data.</p>
-            <p>For information on how Google handles speech data, please refer to <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google's Privacy Policy</a>.</p>
+            <h2>5. 広告について</h2>
+            <p>本アプリの一部では、Google AdMob を利用して広告を表示しています。広告配信に伴うデータ取扱いは、第 4-1 項に記載のとおりです。</p>
+            <h3>5-1. EU/EEA・英国における同意取得（UMP）</h3>
+            <p>EU/EEA・英国の利用者に対しては、Google User Messaging Platform（UMP）を用いて、広告に関するデータ利用への同意を初回起動時に取得します。利用者は「パーソナライズド広告」または「非パーソナライズド広告」のいずれかを選択でき、設定はアプリ内の「同意設定をやり直す」メニューからいつでも変更できます。</p>
+            <h3>5-2. 広告 ID のリセット</h3>
+            <p>利用者は Android 端末の「設定 → プライバシー → 広告」から、広告 ID をいつでもリセット・削除できます。</p>
         </section>
 
+        <!-- 6. 要配慮個人情報の取扱 -->
         <section>
-            <h2>Children's Privacy</h2>
-            <p>Some of our Apps are designed for children. We do not knowingly collect personal information from children. If you become aware that a child has provided us with personal information, please contact us so we can take appropriate action.</p>
+            <h2>6. 要配慮個人情報の取扱</h2>
+            <p>個人情報保護法第 2 条第 3 項に定める「要配慮個人情報」（病歴、心身の機能の障害、医師等による健康診断等の結果等）に該当しうる情報を取り扱う本アプリについて、当方は以下のとおり厳格に管理します。</p>
+            <ul>
+                <li><strong>のんだっけ?:</strong> 服薬情報は端末内の DataStore にのみ保存され、当方および第三者へ送信されません。</li>
+                <li><strong>健康ログ:</strong> 体重・血圧・脈拍・体脂肪率は端末内の Room データベースにのみ保存され、当方および第三者へ送信されません。</li>
+                <li><strong>ADHDセルフチェック:</strong> ASRS / WURS / AQ-10 の心理検査スコアは端末内の SharedPreferences にのみ保存され、当方および第三者へ送信されません。</li>
+                <li><strong>エゴグラム診断:</strong> 性格診断履歴は端末内の Room データベースにのみ保存され、当方および第三者へ送信されません。</li>
+            </ul>
+            <p>これらの要配慮個人情報は、利用者の端末内に閉じた状態で保管され、利用者がアプリをアンインストールすることで完全に削除されます。当方が広告配信・クラッシュ解析の目的でこれらの情報を取得・送信することはありません。</p>
         </section>
 
+        <!-- 7. お子様の個人情報 -->
         <section>
-            <h2>Changes to This Privacy Policy</h2>
-            <p>This Privacy Policy may be updated as necessary. Any changes will be posted on this page.</p>
+            <h2>7. お子様の個人情報（児童保護）</h2>
+            <p>当方は、Google Play の「ファミリー向けプログラム ポリシー」および COPPA（米国児童オンラインプライバシー保護法）の趣旨に従い、児童の個人情報保護に努めます。</p>
+            <ul>
+                <li><strong>あいうえおかきかた（Kakikata）:</strong> 4〜7 歳の児童を対象とした完全オフラインアプリです。<strong>INTERNET 権限を保持せず</strong>、いかなる情報も収集・送信しません。広告も表示しません。</li>
+                <li><strong>はじめてごはん（HajimeteGohan）:</strong> 離乳食を扱う乳児の保護者向けアプリであり、児童本人による直接利用を想定していません。データは端末内に保存されます。</li>
+                <li><strong>おてつだいBank、おくだけ勇者等:</strong> 児童が利用する可能性がある場合でも、児童から個人を特定する情報を意図的に収集することはありません。</li>
+            </ul>
+            <p>13 歳未満の児童が誤って個人情報を提供したことが判明した場合、当方は速やかに削除いたします。<a href="mailto:contact@akiappsdev.com">contact@akiappsdev.com</a> までご連絡ください。</p>
         </section>
 
+        <!-- 8. データの保存・保持期間 -->
         <section>
-            <h2>Contact Us</h2>
-            <p>If you have any questions about this Privacy Policy, please contact us at:</p>
-            <p><strong>Developer:</strong> AkiAppsDev<br>
-            <strong>Email:</strong> <a href="mailto:contact@akiappsdev.com">contact@akiappsdev.com</a></p>
+            <h2>8. データの保存・保持期間</h2>
+            <ul>
+                <li><strong>端末内データ:</strong> 利用者が本アプリをアンインストールした時点で完全に削除されます。当方はこれらのデータをバックアップ・回復する手段を有しません。</li>
+                <li><strong>Google AdMob / Firebase Crashlytics 経由のデータ:</strong> Google LLC のデータ保持ポリシーに従って保管されます。詳細は Google プライバシーポリシーをご参照ください。</li>
+                <li><strong>Firebase Authentication / Firestore（うちのこログ）:</strong> 利用者がアカウントを削除するか、アプリ内で「データ削除」を実行するまで保持されます。</li>
+                <li><strong>お問い合わせ記録:</strong> 当方は受信したメールを、対応完了後 1 年を目安に削除します。</li>
+            </ul>
+        </section>
+
+        <!-- 9. データの開示・訂正・削除請求 -->
+        <section>
+            <h2>9. データの開示・訂正・削除請求（個人情報保護法 §28〜§31）</h2>
+            <p>利用者は、個人情報保護法第 28 条から第 31 条に基づき、当方が保有する個人データについて、以下の請求を行うことができます。</p>
+            <ul>
+                <li>利用目的の通知請求</li>
+                <li>保有個人データの開示請求（第 28 条）</li>
+                <li>保有個人データの訂正・追加・削除請求（第 29 条）</li>
+                <li>保有個人データの利用停止・消去・第三者提供停止請求（第 30 条）</li>
+                <li>第三者提供記録の開示請求（第 28 条第 5 項）</li>
+            </ul>
+            <p><strong>請求方法:</strong> <a href="mailto:contact@akiappsdev.com">contact@akiappsdev.com</a> 宛に、以下の情報を記載してご連絡ください。</p>
+            <ul>
+                <li>請求の種別（開示／訂正／削除等）</li>
+                <li>対象となるアプリ名</li>
+                <li>請求内容の詳細</li>
+                <li>本人確認のための情報（メールアドレス、Google アカウント等の識別情報）</li>
+            </ul>
+            <p><strong>対応期限の目安:</strong> 当方は、請求受領後 2 週間以内（複雑な事案は 30 日以内）に書面または電子メールで回答します。なお、本アプリの大半は端末内のみでデータを保持しており、当方が保有・管理する個人データは限定的である旨ご理解ください。</p>
+            <p><strong>手数料:</strong> 開示請求への対応は無料です。ただし、書面による回答を希望される場合の郵送費等は実費をご負担いただく場合があります。</p>
+        </section>
+
+        <!-- 10. GDPR -->
+        <section>
+            <h2>10. GDPR（EU/EEA・英国の利用者向け）</h2>
+            <p>EU/EEA・英国の利用者には、EU 一般データ保護規則（Regulation (EU) 2016/679, GDPR）および英国 GDPR（UK GDPR）が適用されます。</p>
+
+            <h3>10-1. データ管理者（Controller）</h3>
+            <p>AkiAppsDev<br>
+            福岡県福岡市博多区博多駅前1丁目23番2号 ParkFront博多駅前1丁目5F-B<br>
+            <a href="mailto:contact@akiappsdev.com">contact@akiappsdev.com</a></p>
+
+            <h3>10-2. 法的根拠（Legal Basis, GDPR Art. 6）</h3>
+            <ul>
+                <li><strong>同意（Art. 6(1)(a)）:</strong> パーソナライズド広告の配信、要配慮個人情報の取扱（Art. 9(2)(a)）</li>
+                <li><strong>契約の履行（Art. 6(1)(b)）:</strong> 本アプリの機能提供、有料機能の提供</li>
+                <li><strong>正当な利益（Art. 6(1)(f)）:</strong> 非パーソナライズ広告の配信、不具合解析、不正利用防止</li>
+            </ul>
+
+            <h3>10-3. データ主体の権利</h3>
+            <p>EU/EEA・英国の利用者は以下の権利を行使できます。</p>
+            <ul>
+                <li>アクセス権（Art. 15）</li>
+                <li>訂正権（Art. 16）</li>
+                <li>削除権（忘れられる権利、Art. 17）</li>
+                <li>処理の制限を求める権利（Art. 18）</li>
+                <li>データポータビリティ権（Art. 20）</li>
+                <li>異議申立権（Art. 21）</li>
+                <li>同意の撤回権（Art. 7(3)）</li>
+                <li>自動化された意思決定の対象とならない権利（Art. 22）</li>
+            </ul>
+            <p>権利行使は <a href="mailto:contact@akiappsdev.com">contact@akiappsdev.com</a> までご連絡ください。</p>
+
+            <h3>10-4. 第三国への移転</h3>
+            <p>本アプリで利用する Google AdMob、Firebase Crashlytics、Firebase Authentication / Firestore、Google SpeechRecognizer は、いずれもアメリカ合衆国においてデータ処理が行われます。Google LLC は欧州委員会が承認した標準契約条項（Standard Contractual Clauses, SCC）を採用しており、本第三国移転は当該 SCC を法的根拠として実施されます。詳細は <a href="https://policies.google.com/privacy/frameworks" target="_blank" rel="noopener">Google のフレームワークページ</a>をご参照ください。</p>
+
+            <h3>10-5. 苦情申立先（監督機関）</h3>
+            <p>EU/EEA・英国の利用者は、お住まいの国のデータ保護監督機関（DPA）に苦情を申し立てる権利を有します。各国 DPA の一覧は <a href="https://edpb.europa.eu/about-edpb/about-edpb/members_en" target="_blank" rel="noopener">European Data Protection Board のメンバー一覧</a>をご参照ください。</p>
+        </section>
+
+        <!-- 11. 安全管理措置 -->
+        <section>
+            <h2>11. 安全管理措置</h2>
+            <p>当方は、取得した利用者情報の漏えい・滅失・毀損の防止のため、以下の安全管理措置を講じています。</p>
+            <ul>
+                <li><strong>技術的安全管理措置:</strong> 利用者が入力したデータは原則として端末内に保存し、外部送信を行いません。外部通信が必要な場合は HTTPS（TLS）による暗号化通信のみを使用します。Firebase 等のクラウドサービスは、Google が提供する暗号化保管・アクセス制御を利用します。</li>
+                <li><strong>組織的安全管理措置:</strong> 当方は個人事業主として運営しており、業務上知り得た利用者情報は事業主本人のみが取り扱います。第三者への業務委託は行っていません。</li>
+                <li><strong>物理的安全管理措置:</strong> 開発端末はパスワード／生体認証によるロック、ディスク暗号化を実施しています。</li>
+                <li><strong>人的安全管理措置:</strong> 事業主本人が個人情報保護法および GDPR に関する自主的な学習を継続しています。</li>
+            </ul>
+        </section>
+
+        <!-- 12. 利用規約・免責事項 -->
+        <section>
+            <h2>12. 利用規約・免責事項</h2>
+            <ul>
+                <li>本アプリは現状有姿（AS IS）で提供され、特定目的への適合性、利用結果の正確性等について保証いたしません。</li>
+                <li>当方は、本アプリの提供を予告なく停止・終了する場合があります。</li>
+                <li>本アプリ内および本ポリシーから外部サイトへリンクしている場合、当該リンク先サイトの内容・プライバシー取扱について当方は責任を負いません。</li>
+                <li>ADHDセルフチェック、健康ログ、のんだっけ?、はじめてごはん等の健康関連アプリは、医療診断・治療を提供するものではなく、医療行為の代替にはなりません。健康上の懸念は医療専門家にご相談ください。</li>
+                <li>ADHDセルフチェックの有料機能（¥500 / premium_unlock）に関する特定商取引法上の表記は、Google Play ストアの当該アプリページに準じます。</li>
+            </ul>
+        </section>
+
+        <!-- 13. 苦情申立先 -->
+        <section>
+            <h2>13. 苦情申立先</h2>
+            <p>本ポリシーおよび当方の個人情報取扱に関する苦情は、まず <a href="mailto:contact@akiappsdev.com">contact@akiappsdev.com</a> までお寄せください。</p>
+            <p>当方の対応にご納得いただけない場合は、日本の利用者は個人情報保護委員会へ申立てを行うことができます。</p>
+            <ul>
+                <li><strong>個人情報保護委員会:</strong> <a href="https://www.ppc.go.jp/" target="_blank" rel="noopener">https://www.ppc.go.jp/</a></li>
+                <li><strong>個人情報保護法相談ダイヤル:</strong> 03-6457-9849</li>
+            </ul>
+            <p>EU/EEA・英国の利用者は、第 10-5 項に記載のとおり、お住まいの国のデータ保護監督機関へ申立てができます。</p>
+        </section>
+
+        <!-- 14. ポリシーの変更 -->
+        <section>
+            <h2>14. ポリシーの変更</h2>
+            <p>当方は、法令の改正、本アプリの機能変更、その他の事情により、本ポリシーを改定する場合があります。改定後の本ポリシーは、本ページに掲載した時点から効力を生じます。重要な変更については、可能な限りアプリ内通知または起動時のダイアログ等の方法でお知らせします。</p>
+        </section>
+
+        <!-- 15. お問い合わせ -->
+        <section>
+            <h2>15. お問い合わせ</h2>
+            <p>本ポリシーおよび個人情報取扱に関するお問い合わせは、以下までご連絡ください。</p>
+            <p><strong>事業者:</strong> AkiAppsDev<br>
+            <strong>所在地:</strong> 〒812-0011 福岡県福岡市博多区博多駅前1丁目23番2号 ParkFront博多駅前1丁目5F-B<br>
+            <strong>メール:</strong> <a href="mailto:contact@akiappsdev.com">contact@akiappsdev.com</a><br>
+            <strong>ウェブサイト:</strong> <a href="https://akiappsdev.com" target="_blank" rel="noopener">https://akiappsdev.com</a></p>
+        </section>
+
+        <!-- 16. 改定履歴 -->
+        <section>
+            <h2>16. 改定履歴</h2>
+            <ul>
+                <li><strong>2026-04-28:</strong> 全面改訂。提供アプリリストを最新 20 本に更新（GalaxyBowling / BreathCanvas / TiltTone / BeatWalk / OneSecond / IfOnly / InfiniteSudoku / InfiniteNonogram / InfiniteConnect / SyncScope を削除し、FoodKeeper / Kakikata / TrashAlert / Nondakke / TenseiShindan / HajimeteGohan を追加）。要配慮個人情報節（第 6 項）、個人情報保護法第 28 条開示請求節（第 9 項）、GDPR 節（第 10 項）、安全管理措置節（第 11 項）を新設。事業者所在地を追記。</li>
+                <li><strong>2026-04-06:</strong> 初版公開。</li>
+            </ul>
         </section>
 
         <footer>
-            <p>Effective Date / 施行日: 2026-04-06</p>
+            <p>最終更新日: 2026-04-28</p>
             <p>&copy; 2026 AkiAppsDev</p>
         </footer>
     </div>
