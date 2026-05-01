@@ -219,7 +219,7 @@
         <header>
             <h1>Privacy Policy</h1>
             <p>AkiAppsDev</p>
-            <p>Effective Date: April 28, 2026</p>
+            <p>Effective Date: May 2, 2026</p>
         </header>
 
         <!-- 1. Introduction -->
@@ -229,29 +229,7 @@
             <p><strong>Business Operator:</strong> AkiAppsDev<br>
             <strong>Address:</strong> ParkFront Hakata-Ekimae 1-chome 5F-B, 1-23-2 Hakata-Ekimae, Hakata-ku, Fukuoka City, Fukuoka 812-0011, Japan / 〒812-0011 福岡県福岡市博多区博多駅前1丁目23番2号 ParkFront博多駅前1丁目5F-B<br>
             <strong>Contact:</strong> <a href="mailto:contact@akiappsdev.com">contact@akiappsdev.com</a></p>
-            <p>This Policy applies to the following Android applications provided by us. App names are kept in their original Japanese form, as they are distributed under Japanese titles on Google Play.</p>
-            <ul class="app-list">
-                <li>どうぶつ性格診断 (AnimalShindan)</li>
-                <li>スマート電卓 (SmartCalc)</li>
-                <li>エゴグラム診断 (EgoGram)</li>
-                <li>おやすみサウンド (SleepSound)</li>
-                <li>筋トレログ (MuscleLog)</li>
-                <li>健康ログ (HealthLog)</li>
-                <li>フリック暗算 (FlickMath)</li>
-                <li>よみあげ電卓 (VoiceCalc)</li>
-                <li>まなび電卓 (ManabiCalc)</li>
-                <li>サブスクみえる化 (SubsTracker)</li>
-                <li>うちのこログ (PetLog)</li>
-                <li>おてつだいBank (OtetsudaiBank)</li>
-                <li>おくだけ勇者 (OkudakeHero)</li>
-                <li>食材管理 (FoodKeeper)</li>
-                <li>あいうえおかきかた (Kakikata)</li>
-                <li>ゴミ出しアラート (TrashAlert)</li>
-                <li>のんだっけ? (Nondakke)</li>
-                <li>転生診断 (TenseiShindan)</li>
-                <li>はじめてごはん (HajimeteGohan)</li>
-                <li>ADHDセルフチェック (ADHDShindan)</li>
-            </ul>
+            <p>This Policy applies to all Android applications we publish on the Google Play Store. App-specific handling is described in Section 2 onwards.</p>
         </section>
 
         <!-- 2. Information Collected -->
@@ -271,127 +249,14 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td>どうぶつ性格診断</td>
-                        <td>Diagnostic answers</td>
-                        <td>On-device (volatile memory)</td>
-                        <td>Ad SDK only</td>
-                    </tr>
-                    <tr>
-                        <td>スマート電卓</td>
+                        <td>よみあげ電卓 (VoiceCalc)</td>
                         <td>Calculation history</td>
                         <td>On-device</td>
                         <td>Ad SDK only</td>
-                    </tr>
-                    <tr>
-                        <td>エゴグラム診断</td>
-                        <td>Personality assessment history (sensitive personal information)</td>
-                        <td>On-device (Room DB)</td>
-                        <td>None (excluding ad SDK)</td>
-                    </tr>
-                    <tr>
-                        <td>おやすみサウンド</td>
-                        <td>Sound and timer settings</td>
-                        <td>On-device</td>
-                        <td>Ad SDK only</td>
-                    </tr>
-                    <tr>
-                        <td>筋トレログ</td>
-                        <td>Workout records</td>
-                        <td>On-device (Room DB)</td>
-                        <td>Ad SDK only</td>
-                    </tr>
-                    <tr>
-                        <td>健康ログ</td>
-                        <td>Body weight, blood pressure, pulse, body fat percentage (sensitive personal information)</td>
-                        <td>On-device (Room DB)</td>
-                        <td>None (excluding ad SDK)</td>
-                    </tr>
-                    <tr>
-                        <td>フリック暗算</td>
-                        <td>Scores and play history</td>
-                        <td>On-device</td>
-                        <td>Ad SDK only</td>
-                    </tr>
-                    <tr>
-                        <td>よみあげ電卓</td>
-                        <td>Calculation history</td>
-                        <td>On-device</td>
-                        <td>Ad SDK only</td>
-                    </tr>
-                    <tr>
-                        <td>まなび電卓</td>
-                        <td>Voice input (real-time recognition)</td>
-                        <td>On-device (not persisted)</td>
-                        <td>Google SpeechRecognizer / Ad SDK</td>
-                    </tr>
-                    <tr>
-                        <td>サブスクみえる化</td>
-                        <td>Subscription information (service name, amount)</td>
-                        <td>On-device</td>
-                        <td>Ad SDK only</td>
-                    </tr>
-                    <tr>
-                        <td>うちのこログ</td>
-                        <td>Pet information, photos, weight, etc.</td>
-                        <td>On-device / Firebase Authentication (UID) / Cloud Firestore (data shared within family group)</td>
-                        <td>Firebase (Google LLC, USA)</td>
-                    </tr>
-                    <tr>
-                        <td>おてつだいBank</td>
-                        <td>Chore records and balance</td>
-                        <td>On-device</td>
-                        <td>Ad SDK only</td>
-                    </tr>
-                    <tr>
-                        <td>おくだけ勇者</td>
-                        <td>Game progress data</td>
-                        <td>On-device</td>
-                        <td>Ad SDK only</td>
-                    </tr>
-                    <tr>
-                        <td>食材管理</td>
-                        <td>Food item information, expiration dates, barcode images (transient processing)</td>
-                        <td>On-device</td>
-                        <td>Ad SDK only</td>
-                    </tr>
-                    <tr>
-                        <td>あいうえおかきかた</td>
-                        <td>None collected (fully offline; INTERNET permission not declared)</td>
-                        <td>N/A</td>
-                        <td>None</td>
-                    </tr>
-                    <tr>
-                        <td>ゴミ出しアラート</td>
-                        <td>Garbage collection schedule and notification settings</td>
-                        <td>On-device</td>
-                        <td>Ad SDK only</td>
-                    </tr>
-                    <tr>
-                        <td>のんだっけ?</td>
-                        <td>Medication information (drug name, dosage time, log) (sensitive personal information)</td>
-                        <td>On-device (DataStore)</td>
-                        <td>None (excluding ad SDK)</td>
-                    </tr>
-                    <tr>
-                        <td>転生診断</td>
-                        <td>Diagnostic answers (not persisted)</td>
-                        <td>On-device (volatile memory)</td>
-                        <td>Transitions to external AI services (ChatGPT / Gemini) are initiated manually by the user. Diagnostic answers are not transmitted to our servers.</td>
-                    </tr>
-                    <tr>
-                        <td>はじめてごはん</td>
-                        <td>Baby food records and food allergy information</td>
-                        <td>On-device</td>
-                        <td>Ad SDK only (intended for parents; children are not the audience)</td>
-                    </tr>
-                    <tr>
-                        <td>ADHDセルフチェック</td>
-                        <td>ASRS / WURS / AQ-10 psychological screening scores (sensitive personal information), Google Play purchase status</td>
-                        <td>On-device (SharedPreferences)</td>
-                        <td>None (excluding ad SDK and Google Play Billing)</td>
                     </tr>
                 </tbody>
             </table>
+            <p>This table will be updated as new apps are published.</p>
 
             <h3>2-2. Information Commonly Collected (via Ad SDK)</h3>
             <p>For our Apps that display advertisements, the Google AdMob SDK collects and transmits the following information:</p>
@@ -412,7 +277,6 @@
                 <li>To provide the functionality of our Apps (recording, displaying, and aggregating data entered by users)</li>
                 <li>To deliver and optimize advertisements (via Google AdMob)</li>
                 <li>To analyze and improve app stability and quality (via Firebase Crashlytics)</li>
-                <li>To provide paid features (ADHDセルフチェック)</li>
                 <li>To respond to inquiries</li>
                 <li>To notify users of changes to this Policy and other communications</li>
             </ul>
@@ -443,29 +307,7 @@
                 <li><strong>Privacy Policy:</strong> <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">https://firebase.google.com/support/privacy</a></li>
             </ul>
 
-            <h3>4-3. Google SpeechRecognizer (まなび電卓 only)</h3>
-            <ul>
-                <li><strong>Provider:</strong> Google LLC</li>
-                <li><strong>Recipient Country:</strong> United States of America</li>
-                <li><strong>Information Transmitted:</strong> Voice input data (spoken arithmetic expressions)</li>
-                <li><strong>Purpose of Transmission:</strong> Speech-to-text conversion via the Android-standard speech recognition feature</li>
-                <li><strong>Note:</strong> We do not collect or store voice data ourselves. The Android OS transmits the data to Google via the SpeechRecognizer API.</li>
-            </ul>
-
-            <h3>4-4. Firebase Authentication / Cloud Firestore (うちのこログ only)</h3>
-            <ul>
-                <li><strong>Provider:</strong> Google LLC</li>
-                <li><strong>Recipient Country:</strong> United States of America</li>
-                <li><strong>Information Transmitted:</strong> Google account UID, pet information and photos shared within the family group</li>
-                <li><strong>Purpose of Transmission:</strong> To provide data sharing functionality among family members</li>
-            </ul>
-
-            <h3>4-5. Google Play Billing (ADHDセルフチェック only)</h3>
-            <ul>
-                <li><strong>Provider:</strong> Google LLC</li>
-                <li><strong>Information Transmitted:</strong> Purchase token, purchase status (premium_unlock)</li>
-                <li><strong>Purpose of Transmission:</strong> To provide and verify paid features (a one-time purchase of JPY 500)</li>
-            </ul>
+            <p>If we introduce additional SDKs required for app-specific features (such as voice recognition, cloud sync, or in-app billing), we will amend this Policy and apply them only to the relevant apps.</p>
         </section>
 
         <!-- 5. Advertising -->
@@ -481,25 +323,14 @@
         <!-- 6. Sensitive Personal Information -->
         <section>
             <h2>6. Handling of Sensitive Personal Information</h2>
-            <p>For our Apps that handle information which may fall under "sensitive personal information" (要配慮個人情報) as defined in Article 2, paragraph 3 of the APPI (e.g., medical history, physical or mental disability, results of medical examinations by a physician, etc.), we manage such information strictly as follows:</p>
-            <ul>
-                <li><strong>のんだっけ?:</strong> Medication information is stored only in DataStore on the device and is not transmitted to us or any third party.</li>
-                <li><strong>健康ログ:</strong> Body weight, blood pressure, pulse, and body fat percentage are stored only in the Room database on the device and are not transmitted to us or any third party.</li>
-                <li><strong>ADHDセルフチェック:</strong> ASRS / WURS / AQ-10 psychological screening scores are stored only in SharedPreferences on the device and are not transmitted to us or any third party.</li>
-                <li><strong>エゴグラム診断:</strong> Personality assessment history is stored only in the Room database on the device and is not transmitted to us or any third party.</li>
-            </ul>
-            <p>This sensitive personal information is kept entirely within the user's device, and is fully deleted when the user uninstalls the app. We do not collect or transmit such information for the purposes of ad delivery or crash analysis.</p>
+            <p>None of our currently published apps handle information that may fall under "sensitive personal information" (要配慮個人情報) as defined in Article 2, paragraph 3 of the APPI (e.g., medical history, physical or mental disability, results of medical examinations by a physician, etc.).</p>
+            <p>If we publish an app that handles such information in the future, we will keep that information strictly within the user's device and will not transmit it to us or any third party. The amended details will be reflected in this Policy.</p>
         </section>
 
         <!-- 7. Children's Privacy -->
         <section>
             <h2>7. Children's Privacy</h2>
-            <p>In line with the spirit of Google Play's Families Policy and the U.S. Children's Online Privacy Protection Act (COPPA), we strive to protect the personal information of children.</p>
-            <ul>
-                <li><strong>あいうえおかきかた (Kakikata):</strong> A fully offline app intended for children aged 4–7. <strong>It does not declare the INTERNET permission</strong> and collects or transmits no information whatsoever. No advertisements are displayed.</li>
-                <li><strong>はじめてごはん (HajimeteGohan):</strong> An app for parents of infants who are starting solid foods. It is not intended for direct use by children. Data is stored on the device.</li>
-                <li><strong>おてつだいBank, おくだけ勇者, etc.:</strong> Even where children may use the app, we do not intentionally collect personally identifiable information from children.</li>
-            </ul>
+            <p>In line with the spirit of Google Play's Families Policy and the U.S. Children's Online Privacy Protection Act (COPPA), we strive to protect the personal information of children. We do not currently publish any app primarily targeting children under the age of 13.</p>
             <p>If we become aware that a child under the age of 13 has inadvertently provided personal information, we will promptly delete it. Please contact <a href="mailto:contact@akiappsdev.com">contact@akiappsdev.com</a>.</p>
         </section>
 
@@ -509,7 +340,6 @@
             <ul>
                 <li><strong>On-device data:</strong> Completely deleted when the user uninstalls the app. We do not have any means to back up or recover such data.</li>
                 <li><strong>Data via Google AdMob / Firebase Crashlytics:</strong> Retained in accordance with Google LLC's data retention policies. Please refer to Google's privacy policy for details.</li>
-                <li><strong>Firebase Authentication / Firestore (うちのこログ):</strong> Retained until the user deletes their account or executes "Delete data" within the app.</li>
                 <li><strong>Inquiry records:</strong> We delete received emails approximately one year after the inquiry has been resolved.</li>
             </ul>
         </section>
@@ -549,7 +379,7 @@
             <h3>10-2. Lawful Basis for Processing (GDPR Art. 6)</h3>
             <ul>
                 <li><strong>Consent (Art. 6(1)(a)):</strong> Delivery of personalized advertising; processing of special-category data (Art. 9(2)(a))</li>
-                <li><strong>Performance of a contract (Art. 6(1)(b)):</strong> Provision of app functionality; provision of paid features</li>
+                <li><strong>Performance of a contract (Art. 6(1)(b)):</strong> Provision of app functionality</li>
                 <li><strong>Legitimate interests (Art. 6(1)(f)):</strong> Delivery of non-personalized advertising; crash analysis; prevention of fraudulent use</li>
             </ul>
 
@@ -568,7 +398,7 @@
             <p>To exercise these rights, please contact <a href="mailto:contact@akiappsdev.com">contact@akiappsdev.com</a>.</p>
 
             <h3>10-4. Transfers to Third Countries</h3>
-            <p>Google AdMob, Firebase Crashlytics, Firebase Authentication / Firestore, and Google SpeechRecognizer used in our Apps process data in the United States of America. Google LLC has adopted the Standard Contractual Clauses (SCC) approved by the European Commission, and such transfers to third countries are carried out on the basis of these SCCs. For details, please refer to <a href="https://policies.google.com/privacy/frameworks" target="_blank" rel="noopener">Google's frameworks page</a>.</p>
+            <p>Google AdMob and Firebase Crashlytics used in our Apps process data in the United States of America. Google LLC has adopted the Standard Contractual Clauses (SCC) approved by the European Commission, and such transfers to third countries are carried out on the basis of these SCCs. For details, please refer to <a href="https://policies.google.com/privacy/frameworks" target="_blank" rel="noopener">Google's frameworks page</a>.</p>
 
             <h3>10-5. Lodging a Complaint (Supervisory Authority)</h3>
             <p>Users in the EU/EEA and the UK have the right to lodge a complaint with the data protection authority (DPA) in their country of residence. A list of national DPAs is available at the <a href="https://edpb.europa.eu/about-edpb/about-edpb/members_en" target="_blank" rel="noopener">European Data Protection Board members page</a>.</p>
@@ -593,8 +423,7 @@
                 <li>Our Apps are provided "AS IS", and we make no warranty as to fitness for a particular purpose or accuracy of the results obtained through their use.</li>
                 <li>We may suspend or terminate the provision of our Apps without prior notice.</li>
                 <li>Where our Apps or this Policy contain links to external websites, we are not responsible for the content or privacy practices of such linked sites.</li>
-                <li>Health-related apps such as ADHDセルフチェック, 健康ログ, のんだっけ?, and はじめてごはん do not provide medical diagnosis or treatment and are not a substitute for medical care. Please consult a qualified medical professional for any health concerns.</li>
-                <li>Disclosures regarding the paid features of ADHDセルフチェック (JPY 500 / premium_unlock) under Japan's Act on Specified Commercial Transactions (特定商取引法) are governed by the corresponding app page on the Google Play Store.</li>
+                <li>If we publish health- or medical-related apps, they do not provide medical diagnosis or treatment and are not a substitute for medical care. Please consult a qualified medical professional for any health concerns.</li>
             </ul>
         </section>
 
@@ -630,13 +459,14 @@
         <section>
             <h2>16. Revision History</h2>
             <ul>
+                <li><strong>2026-05-02:</strong> Generalized scope to "all Android apps published on Google Play" and simplified app enumeration. Aligned with the launch of VoiceCalc as the sole published app: removed app-specific sections that did not apply (4-3 SpeechRecognizer, 4-4 Firebase Auth/Firestore, 4-5 Play Billing, the per-app sensitive-information enumeration, and the per-app children's-app examples).</li>
                 <li><strong>2026-04-28:</strong> Comprehensive revision. Updated the list of provided apps to the latest 20 titles (removed GalaxyBowling / BreathCanvas / TiltTone / BeatWalk / OneSecond / IfOnly / InfiniteSudoku / InfiniteNonogram / InfiniteConnect / SyncScope; added FoodKeeper / Kakikata / TrashAlert / Nondakke / TenseiShindan / HajimeteGohan). Added new sections on sensitive personal information (Section 6), APPI Article 28 disclosure requests (Section 9), GDPR (Section 10), and security measures (Section 11). Added the business operator's address. English translation (this page) published the same day.</li>
                 <li><strong>2026-04-06:</strong> Initial publication.</li>
             </ul>
         </section>
 
         <footer>
-            <p>Effective Date: 2026-04-28</p>
+            <p>Effective Date: 2026-05-02</p>
             <p>&copy; 2026 AkiAppsDev</p>
         </footer>
     </div>
